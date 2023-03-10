@@ -1,0 +1,105 @@
+body {
+  background: #333;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+  
+table {
+  margin-top: 20px;
+  width:30%;
+  transform:rotate(90deg);
+}
+
+td {
+  width:3.125%;
+  position:relative;
+}
+
+td:after{
+  content:'';
+  display:block;
+  margin-top:100%;
+}
+
+td .content {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:gold;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    height: 100%;
+    Width : 100%;
+}
+
+button
+{
+    display: block;
+    margin: 1% auto;
+    height: 44px;
+    padding: 12px;
+}
+
+
+button {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:12px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+button:hover {
+	background-color:#5cbf2a;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+:root {
+    --success: #00b894;
+    --progress: #e17055;
+}
+
+.progressbar-wrapper {
+    background-color: #dfe6e9;
+    color: white;
+    border-radius: 15px;
+    width: 20%;
+    position: center;
+}
+
+.progressbar {
+    background-color: var(--progress);
+    color: white;
+    padding: 1rem;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.progressbar[title="downloading"] {
+    background-color: var(--progress);
+}
+
+.progressbar[title="downloaded"] {
+    background-color: var(--success);
+}
+
+.mp4 {
+    width: 80%;
+}
+
+     
